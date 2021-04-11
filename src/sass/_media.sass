@@ -1,0 +1,21 @@
+@media screen and (min-width: 1550px)
+    .container
+        max-width: 1440px
+        margin-left: 23%
+    .hero
+        &__title
+            position: absolute
+            left: 10%
+            &::after
+                right: -53px
+@media screen and (max-width: 1355px)
+    .hero
+        &__title
+            top: calc(100vw / 7)
+            font-size: calc(100vw / 3.2)
+            &::after
+                display: none
+                right: -53px
+        &__subtitle
+            font-size: calc(100vw / 8)
+            margin-bottom: calc(100vw/4.2)
