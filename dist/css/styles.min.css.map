@@ -1,0 +1,1 @@
+{"version":3,"sources":["styles.sass"],"names":[],"mappings":"AAAA,KACE,OAAA,EACA,QAAA,EACF,MACE,KAAA","file":"styles.min.css","sourcesContent":["body {\n  margin: 0;\n  padding: 0; }\n.icon {\n  fill: blueviolet; }\n"]}
