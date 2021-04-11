@@ -1,0 +1,124 @@
+.projects
+  width: 100%
+  min-height: 961px
+  padding: 0.1px
+  &__container
+    position: relative
+  &__title
+    position: absolute
+    top: -64px
+    left: -10px
+  &__image
+    width: 100%
+    margin-bottom: 26px
+  &-cards
+    display: flex
+    flex-wrap: wrap
+    max-width: 1126px
+    padding-right: 10px
+  &__cards
+    margin-bottom: 80px
+  &-card
+    width: 100%
+    max-width: 537px
+    &:first-child
+      max-width: 100%
+      margin-bottom: 100px
+    &:nth-child(2)
+      margin-top: -150px
+    &:nth-child(3)
+      margin-bottom: 100px
+    &:nth-child(4)
+      margin-top: -150px
+    &:nth-child(2n)
+      margin-right: auto
+    &__image
+      margin-bottom: 28px
+    &__title
+      font-family: "Sofia Pro Bold", sans-serif
+      font-weight: 400
+      font-size: 24px
+      line-height: 24px
+      text-transform: uppercase
+      letter-spacing: 0.6px
+      color: #C65B0C
+    &__subtitle
+      font-family: "Sofia Pro Regular", sans-serif
+      font-weight: 400
+      font-size: 16px
+      line-height: 16px
+      text-transform: uppercase
+      letter-spacing: 0.4px
+      color: #292828
+    &__info
+      font-family: "Sofia Pro Regular", sans-serif
+      font-weight: 400
+      font-size: 11px
+      line-height: 12px
+      letter-spacing: -0.1px
+      color: #292828
+      opacity: 0.5
+      text-transform: uppercase
+    &-content
+      position: relative
+      max-width: 537px
+      padding: 10px 30px 10px 0
+      &:first-child
+        margin-left: auto
+        &::after
+          left: 0
+      &::after
+        content: ''
+        position: absolute
+        bottom: 0
+        width: 100%
+        max-width: 537px
+        height: 1px
+        left: 0
+        background-color: #292828
+        opacity: 0.4
+      &__row
+        display: flex
+        justify-content: space-between
+        align-items: flex-end
+        &:first-child
+          margin-bottom: 17px
+        &:last-child
+          margin-bottom: 38px
+  &-running-row
+    white-space: nowrap
+    overflow: hidden
+    &__item
+      position: relative
+      display: inline-block
+      margin-right: 37px
+      font-family: "Sofia Pro Bold", sans-serif
+      font-weight: 400
+      font-size: 36px
+      line-height: 36px
+      text-transform: uppercase
+      opacity: 0.5
+      text-shadow: 0px 1px 0 rgb(0,0,0),0px -1px 0 rgb(0,0,0),1px 0px 0 rgb(0,0,0),-1px 0px 0 rgb(0,0,0),1px 1px 0 rgb(0,0,0),1px -1px 0 rgb(0,0,0),-1px 1px 0 rgb(0,0,0),-1px -1px 0 rgb(0,0,0)
+      -webkit-text-shadow: 0px 1px 0 rgb(0,0,0),0px -1px 0 rgb(0,0,0),1px 0px 0 rgb(0,0,0),-1px 0px 0 rgb(0,0,0),1px 1px 0 rgb(0,0,0),1px -1px 0 rgb(0,0,0),-1px 1px 0 rgb(0,0,0),-1px -1px 0 rgb(0,0,0)
+      -moz-text-shadow: 0px 1px 0 rgb(0,0,0),0px -1px 0 rgb(0,0,0),1px 0px 0 rgb(0,0,0),-1px 0px 0 rgb(0,0,0),1px 1px 0 rgb(0,0,0),1px -1px 0 rgb(0,0,0),-1px 1px 0 rgb(0,0,0),-1px -1px 0 rgb(0,0,0)
+      color: #dedcd4
+      &::after
+        content: ''
+        position: absolute
+        right: -27px
+        top: 50%
+        transform: translateY(-50%)
+        width: 11px
+        height: 11px
+        border-radius: 100%
+        background-color: transparent
+        border: 1px solid rgba(0, 0, 0, 0.8)
+.projects-running-row
+  & .active
+    color: #C65B0C
+    opacity: 1
+    text-shadow: none
+    -webkit-text-shadow: none
+    -moz-text-shadow: none
+
+
