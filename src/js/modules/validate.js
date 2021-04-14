@@ -18,6 +18,9 @@ export const validate = (form) => {
                 case 'phone':
                     console.log("it is phone input");
                     break;
+                case 'message':
+                    console.log("it is message input");
+                    break;
             }
         }
     });
