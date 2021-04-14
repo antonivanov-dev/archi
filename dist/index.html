@@ -9,15 +9,15 @@
     <link rel="stylesheet" href="css/styles.min.css">
 </head>
 <body>
-    <aside class="sidebar">
+    <aside id="sidebar" class="sidebar">
         <nav class="sidebar-nav sidebar__nav">
             <a href="/" class="sidebar-nav__link">Projects</a>
             <a href="/" class="sidebar-nav__link">Workflow</a>
             <a href="/" class="sidebar-nav__link">About</a>
             <a href="/" class="sidebar-nav__link">Contacts</a>
         </nav>
-        <div class="sidebar-logo sidebar__logo">
-            <a href="/" class="sidebar-logo__link">archi.</a>
+        <div class="logo sidebar__logo">
+            <a href="/" class="logo__link logo__link--black">archi.</a>
         </div>
     </aside>
     <!-- /.sidebar -->
@@ -27,12 +27,17 @@
             <h1 class="hero__title">archi</h1>
             <h2 class="hero__subtitle">Architectural firm in Russia</h2>
             <p class="text hero__text">Public and residential buildings, individual residential buildings, offices, public interiors, residential interiors, renovation</p>
-            <a href="/" class="hero-link hero__link">Show all projects</a>
+            <a href="/" class="button hero__button">Show all projects</a>
             <div class="hero-social hero__social">
                 <a href="/" class="hero-social__link">Facebook</a>
                 <a href="/" class="hero-social__link">Instagram</a>
             </div>
         </div>
+            <button id="burger" class="burger hero__burger">
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+                <span class="burger__line"> </span>
+            </button>
     </section>
     <!-- /.hero -->
 
@@ -132,11 +137,8 @@
         <div class="container about__container">
             <h2 class="title about__title">About</h2>
             <img src="./images/about-bg.png" alt="peoples" class="about__image">
-            <div class="about-content">
-                <p class="about-content-text about-content__text"> <span>archi.</span> was founded in 2010. We work
-                    in a fields of
-                    indastrial design,
-                    residental architecture, commerchial interiors and art direction. We realised more than 150 projects of public and residential buildings, individual residential buildings, offices, public interiors, residential interiors and renovation...</p>
+            <div class="about-content about__content">
+                <p class="about-content-text about-content__text"> <span>archi.</span> was founded in 2010. We work in a fields of indastrial design, residental architecture, commerchial interiors and art direction. We realised more than 150 projects of public and residential buildings, individual residential buildings, offices, public interiors, residential interiors and renovation...</p>
                 <div class="about-content-nums">
                     <div class="about-content-nums__item">
                         <span class="about-content-nums__number">/01</span>
@@ -171,14 +173,14 @@
             </div>
         </div>
         <div class="running-row about__running-row">
-            <span class="running-row__item running-row__item--white">all projects</span>
-            <span class="running-row__item running-row__item--white active">all projects</span>
-            <span class="running-row__item running-row__item--white">all projects</span>
-            <span class="running-row__item running-row__item--white">all projects</span>
-            <span class="running-row__item running-row__item--white">all projects</span>
-            <span class="running-row__item running-row__item--white">all projects</span>
-            <span class="running-row__item running-row__item--white">all projects</span>
-            <span class="running-row__item running-row__item--white">all projects</span>
+            <span class="running-row__item running-row__item--white">read more</span>
+            <span class="running-row__item running-row__item--white active">read more</span>
+            <span class="running-row__item running-row__item--white">read more</span>
+            <span class="running-row__item running-row__item--white">read more</span>
+            <span class="running-row__item running-row__item--white">read more</span>
+            <span class="running-row__item running-row__item--white">read more</span>
+            <span class="running-row__item running-row__item--white">read more</span>
+            <span class="running-row__item running-row__item--white">read more</span>
         </div>
     </section>
     <!-- /.about -->
@@ -194,6 +196,85 @@
     </section>
     <!-- /.contacts -->
 
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container footer__container">
+                <div class="footer-column">
+                    <p class="footer-title footer__title">Let’s design together</p>
+                </div>
+                <!-- /.footer-column -->
+                <div class="footer-column">
+                    <h4 class="footer-subtitle footer__subtitle">leave your request here</h4>
+                    <form id="footerForm" action="/" class="footer-form">
+                        <div class="footer-form__input-group">
+                            <label for="name" class="footer-form__label">Your name</label>
+                            <input type="text" id="name" name="name" class="footer-form__input">
+                        </div>
+                        <!-- /.footer-form__input-group -->
+                        <div class="footer-form__input-group">
+                            <label for="location" class="footer-form__label">Choose location</label>
+                            <input type="text" id="location" name="location" class="footer-form__input">
+                        </div>
+                        <!-- /.footer-form__input-group -->
+                        <div class="footer-form__input-group">
+                            <label for="email" class="footer-form__label">Email</label>
+                            <input type="email" id="email" name="email" class="footer-form__input">
+                        </div>
+                        <!-- /.footer-form__input-group -->
+                        <div class="footer-form__input-group">
+                            <label for="phone" class="footer-form__label">Phone</label>
+                            <input type="tel" id="phone" name="phone" class="footer-form__input">
+                        </div>
+                        <!-- /.footer-form__input-group -->
+                        <div class="footer-form__input-group">
+                            <label for="message" class="footer-form__label">Message</label>
+                            <input type="text" id="message" name="message" class="footer-form__input">
+                        </div>
+                        <!-- /.footer-form__input-group -->
+                        <div class="footer-form__button-container">
+                            <button type="submit" class="button footer-form__button">send</button>
+                            <p class="description footer-form__description">We will keep your personal information private and safe.</p>
+                        </div>
+                        <!-- /.footer-form__button-container -->
+                    </form>
+                </div>
+                <!-- /.footer-column -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.footer-form footer__form -->
+        <div class="footer-bottom">
+            <div class="footer-bottom__wrapper">
+                <div class="logo footer__logo">
+                    <a href="/" class="logo__link logo__link--white">archi.</a>
+                </div>
+                <div class="column footer-bottom__column">
+                    <div class="column__title">headquarter</div>
+                    <address class="column__item">26, Krutaya St., <br/> Goryachiy Klyuch, Russia</address>
+                </div>
+                <!-- /.column footer-bottom__column -->
+                <div class="column footer-bottom__column">
+                    <div class="column__title">Email for press</div>
+                    <a href="mailto:89129006202@mail.ru" class="column__item column__link">89129006202@mail.ru</a>
+                    <a href="mailto:ivanovanton.web@gmail.com" class="column__item column__link">ivanovanton.web@gmail.com</a>
+                </div>
+                <!-- /.column footer-bottom__column -->
+                <div class="column footer-bottom__column">
+                    <div class="column__title">Phones</div>
+                    <a href="tel:+79129006202" class="column__item column__link">+7 912 900 62 02</a>
+                    <a href="tel:+79028905151" class="column__item column__link">+7 902 890 51 51</a>
+                </div>
+                <!-- /.column footer-bottom__column -->
+                <div class="column footer-bottom__column">
+                    <div class="column__title">social media</div>
+                    <a href="/" class="column__item column__link">facebook</a>
+                    <a href="/" class="column__item column__link">instagram</a>
+                </div>
+                <!-- /.column footer-bottom__column -->
+            </div>
+        </div>
+        <!-- /.footer-bottom -->
+    </footer>
     <script src="js/index.js"></script>
 </body>
 </html>

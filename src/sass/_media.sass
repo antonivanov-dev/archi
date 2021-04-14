@@ -1,7 +1,10 @@
 @media screen and (min-width: 1550px)
   .container
     max-width: 1440px
-    margin-left: 19%
+    margin: 0 5% 0 17%
+  .about
+    &__content
+      margin-bottom: 90px
   .hero
     &__title
       position: absolute
@@ -11,8 +14,9 @@
   .projects
     &-cards
       max-width: 90%
-
-@media screen and (max-width: 1355px)
+@media screen and (max-width: 1400px)
+  .container
+    margin: 0 5% 0 17%
   .hero
     &__title
       top: calc(100vw / 7)
@@ -28,9 +32,280 @@
       max-width: 450px
       &-content
         max-width: 450px
-@media screen and (max-width: 1150px)
+  .about
+    &__content
+      margin-bottom: 90px
+@media screen and (max-width: 1200px)
   .projects
     &-card
       max-width: 390px
       &-content
         max-width: 390px
+  .footer
+    &-title
+      font-size: 100px
+      margin-right: 20px
+@media screen and (max-height: 850px)
+  .hero
+    &__subtitle
+      margin-bottom: 180px
+@media screen and (max-width: 1200px)
+  .hero
+    &__subtitle
+      font-size: calc(100vw / 8.5)
+
+  .container
+    margin: 0 5% 0 30%
+    width: 70%
+  .footer
+    &__container
+      width: 100%
+      max-width: 90%
+      margin: 0 auto
+    &-bottom
+      &__wrapper
+        flex-wrap: wrap
+        width: 80%
+        margin: auto
+      &__column
+        padding-top: 0
+    &__logo
+      flex-basis: 100%
+      margin-bottom: 100px
+
+  .projects
+    &__cards
+      flex-direction: column
+    &-card
+      max-width: 600px
+      &:not(:last-child)
+        margin: 0 0 60px 0 !important
+      &-content
+        width: 100%
+        max-width: 100%
+        &::after
+          max-width: 100%
+        &:first-child
+          margin-left: 0
+          max-width: 600px
+  .title
+    font-size: 80px
+  .column
+    flex-basis: 46%
+    margin-bottom: 40px
+  .about
+    &__container
+      padding: 0 0 50px 0
+    &-content
+      padding-right: 40px
+@media screen and (max-width: 992px)
+  .hero
+    &__title
+      top: calc(100vw / 10.6)
+    &__subtitle
+      font-size: calc(100vw / 8)
+      margin-bottom: calc(100vw/3.5)
+  .footer
+    &__container
+      flex-direction: column
+      width: 70%
+      margin: 0 5% 0 30%
+    &__subtitle
+      margin-bottom: 50px
+    &-form
+      padding-right: 40px
+  .projects
+    &__cards
+      padding-right: 40px
+  .about
+    &-content
+      flex-direction: column
+      &__text
+        margin-bottom: 40px
+    &__image
+      margin-bottom: 40px
+
+@media screen and (max-width: 768px)
+  .sidebar
+    width: 300px
+    left: -300px
+    background-color: #fff
+    &+.active
+      left: 0
+  .burger
+    display: flex
+  .hero
+    padding: 130px 0 150px
+    &__button
+      margin-bottom: 10px
+    &__title
+      top: 50%
+      transform: translateY(-80%)
+    &__subtitle
+      font-size: 100px
+  .container
+    width: 90%
+    margin: auto
+    padding: 0
+  .footer
+    &-form
+      padding-right: 40px
+    &-bottom
+      &__wrapper
+        width: 90%
+  .projects
+    &__cards
+      padding: 0
+      margin-bottom: 77px
+    &-card
+      width: 100%
+      max-width: 100%
+      &-content
+        &:first-child
+          max-width: 100%
+  .about
+    &__container
+      margin-bottom: 77px
+  .footer
+    &-form
+      padding: 0
+  .contacts
+    &-card
+      width: 200px
+      height: 110px
+      &__title
+        font-size: 16px
+    &-map
+      height: 300px
+
+  .running-row
+    &__item
+      font-size: 28px
+  .contacts-card
+    &__title
+      margin-bottom: 15px
+    &__address
+      font-size: 14px
+      max-width: 150px
+@media screen and (max-width: 576px)
+  .title
+    font-size: 56px
+  .hero
+    &__subtitle
+      font-size: 66px
+      letter-spacing: 0
+    &__title
+      transform: translateY(-85%)
+    &__text
+      font-size: 20px
+  .about
+    &-content
+      padding: 0
+      &-text
+        margin-right: 0
+  .contacts
+    &-card
+      top: auto
+      right: auto
+      left: 40px
+      z-index: 300
+  .footer
+    &-bottom
+      &__wrapper
+        flex-direction: column
+    &-title
+      font-size: 84px
+      padding-right: 28px
+  .projects-card
+    &__title
+      font-size: 20px
+      line-height: 20px
+    &__subtitle
+      font-size: 13px
+      line-height: 13px
+@media screen and (max-width: 450px)
+  .hero
+    height: auto
+    padding: 110px 0 100px 0
+    &__container
+      align-items: center
+      position: relative
+    &__title
+      top: 75%
+      left: -20px
+    &__subtitle
+      font-size: 60px
+      text-align: center
+      margin-bottom: 100px
+    &__social
+      align-self: center
+    &-social
+      &__link
+        font-size: 14px
+    &__text
+      font-size: 16px
+      text-align: center
+      margin-bottom: 40px
+    &__button
+      margin-bottom: 40px
+  .sidebar
+    width: 100vw
+    height: 100vh
+    left: -100vw
+    align-items: center
+  .burger
+    left: unset
+    right: 30px
+    top: 40px
+    transform: translateX(-50%)
+  .title
+    left: 0
+    width: 100%
+    text-align: center
+  .projects-card
+    &-content
+      padding-right: 0
+    &__title
+      max-width: 180px
+    &__subtitle
+      max-width: 180px
+    &__info
+      display: flex
+      text-align: right
+@media screen and (max-width: 375px)
+  .hero
+    &__subtitle
+      font-size: 46px
+  .button
+    padding: 12px 24px
+  .footer
+    &-title
+      font-size: 56px
+    &__subtitle
+      font-size: 18px
+  .about
+    padding: 44px 0 30px
+    &-content
+      &__text
+        font-size: 15px
+      &-nums
+        &__text
+          font-size: 14px
+          &>span
+            font-size: 40px
+  .running-row
+    display: none
+  .projects-cards
+    margin-bottom: 30px
+
+@media screen and (min-width: 992px)
+  a
+    transition: color 0.4s ease
+    &:not(.logo__link)
+      &:hover
+        color: #C65B0C
+  .button
+    transition: all 0.4s ease-in-out
+    &:hover
+      color: #C65B0C
+      border-color: #C65B0C

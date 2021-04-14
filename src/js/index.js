@@ -1,3 +1,6 @@
-import log from './modules/log'
+import footerForm from './modules/footerForm'
+import toggleBurger from "./modules/toggleBurger";
 
-log();
+footerForm();
+
+toggleBurger();

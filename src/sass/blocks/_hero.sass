@@ -1,9 +1,13 @@
 .hero
-  padding: 70px 0 80px
+  padding: 70px 0 150px
   position: relative
   height: calc(100vh + 64px)
   &__container
     padding-right: 40px
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    justify-content: space-between
   &__title
     position: absolute
     left: 0
@@ -41,6 +45,7 @@
   &-social
     display: flex
     justify-content: flex-end
+    align-self: flex-end
     &__link
       font-family: "Sofia Pro Regular", sans-serif
       font-size: 18px
@@ -49,14 +54,49 @@
       text-transform: uppercase
       &:not(:last-child)
         margin-right: 30px
-  &-link
-    display: inline-block
-    padding: 12px 52px
-    text-transform: uppercase
-    text-decoration: none
-    color: black
-    background-color: transparent
-    border: 1.5px solid #292828
-  &__link
+  &__button
     margin-bottom: 35px
+    border: 1.5px solid #292828
+.burger
+  position: absolute
+  top: 50px
+  left: 7%
+  flex-direction: column
+  align-items: center
+  justify-content: space-between
+  background-color: transparent
+  border: none
+  outline: none
+  width: 30px
+  height: 20px
+  cursor: pointer
+  z-index: 300
+  display: none
+  transition: all .2s cubic-bezier(0.65, 0.05, 0.36, 1) 0s
+  &__line
+    position: absolute
+    left: 0
+    display: inline-block
+    height: 2px
+    width: 30px
+    background-color: #000
+    transform: translateX(0)
+    transition: all .2s cubic-bezier(0.65, 0.05, 0.36, 1) 0s
+    &:first-child
+      top: 0
+    &:last-child
+      bottom: 0
+    &:nth-child(2)
+      top: 50%
+      transform: translateY(-50%)
+  &--active
+    transition: all .2s cubic-bezier(0.65, 0.05, 0.36, 1) 0s
+    transform: translateX(260px)
+    &>.burger__line
+      &:first-child
+        transform: translateY(6px) rotate(45deg)
+      &:last-child
+        transform: translateY(-12px) rotate(-45deg)
+      &:nth-child(2)
+        display: none
 

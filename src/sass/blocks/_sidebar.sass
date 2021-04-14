@@ -7,6 +7,7 @@
   padding: 92px 40px 80px
   position: fixed
   z-index: 10
+  transition: all .2s cubic-bezier(0.65, 0.05, 0.36, 1) 0s
   &-nav
     display: flex
     flex-direction: column
@@ -17,12 +18,5 @@
       line-height: 31px
       color: #000000
       margin-bottom: 6px
-  &-logo
-    &__link
-      font-family: "Sofia Pro Bold", sans-serif
-      font-size: 24px
-      line-height: 24px
-      letter-spacing: 0.025em
-      text-transform: uppercase
-      text-decoration: none
-      color: black
+  &--active
+    left: 0 !important
